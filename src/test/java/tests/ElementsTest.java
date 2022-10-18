@@ -33,5 +33,6 @@ public class ElementsTest {
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath(DELETE_BUTTON)).click();
         int quantityDeleteButtons = driver.findElements(By.xpath(DELETE_BUTTON)).size();
+        Assert.assertEquals(quantityDeleteButtons, 1);
     }
 }
